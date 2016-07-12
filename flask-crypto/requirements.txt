@@ -49,3 +49,5 @@ setuptools==20.7.0 \
     --hash=sha256:5704988be46145f68b3b04d599bb03d5b6aaeaf66de8f2896bb1d3ba8aebd7ba
 structlog==16.1.0 \
     --hash=sha256:a8cc45c208c6b251031ec223940552eccd97dbdb322474e0c4ec9e50f76a225a
+gunicorn==19.6.0 \
+    --hash=sha256:723234ea1fa8dff370ab69830ba8bc37469a7cba13fd66055faeef24085e6530
