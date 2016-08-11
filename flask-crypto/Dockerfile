@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:15.04
 
 ENV RUNTIME_PACKAGES="python3"
 ENV BUILD_PACKAGES="curl build-essential python3-dev ca-certificates libffi-dev libssl-dev"
