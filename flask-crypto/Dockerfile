@@ -1,11 +1,11 @@
 FROM ubuntu:15.04
 
 ENV RUNTIME_PACKAGES="python3"
-ENV BUILD_PACKAGES="curl build-essential python3-dev ca-certificates libffi-dev libssl-dev"
+ENV BUILD_PACKAGES="curl build-essential python3-dev ca-certificates libssl-dev libffi-dev"
 
 ADD requirements.txt /crypto/requirements.txt
 
-# Install all dependencies, cleanup and reinstall python 
+# Install all dependencies, cleanup and reinstall python
 # apt's cleanup also uninstalls python, so we have to install again..
 
 RUN apt-get update && apt-get install -y $RUNTIME_PACKAGES $BUILD_PACKAGES \
